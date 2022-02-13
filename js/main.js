@@ -3,5 +3,5 @@ return check;});$('.validate-form .input100').each(function(){$(this).focus(func
 else{if($(input).val().trim()==''){return false;}}}
 function showValidate(input){var thisAlert=$(input).parent();$(thisAlert).addClass('alert-validate');}
 function hideValidate(input){var thisAlert=$(input).parent();$(thisAlert).removeClass('alert-validate');}
-$('.simpleslide100').each(function(){var delay=7000;var speed=1000;var itemSlide=$(this).find('.simpleslide100-item');var nowSlide=0;$(itemSlide).hide();$(itemSlide[nowSlide]).show();nowSlide++;if(nowSlide>=itemSlide.length){nowSlide=0;}
+$('.simpleslide100').each(function(){var delay=3000;var speed=1000;var itemSlide=$(this).find('.simpleslide100-item');var nowSlide=0;$(itemSlide).hide();$(itemSlide[nowSlide]).show();nowSlide++;if(nowSlide>=itemSlide.length){nowSlide=0;}
 setInterval(function(){$(itemSlide).fadeOut(speed);$(itemSlide[nowSlide]).fadeIn(speed);nowSlide++;if(nowSlide>=itemSlide.length){nowSlide=0;}},delay);});})(jQuery);
